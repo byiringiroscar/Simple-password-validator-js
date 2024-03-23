@@ -1,4 +1,18 @@
 const passwordInput = document.querySelector('.password-control')
+const showPasswordButton = document.querySelector('.show-password')
+
+
+showPasswordButton.addEventListener('click', function() {
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password'
+    passwordInput.setAttribute('type', type)
+    // this.classList.toggle('active')
+    if(type === 'password') {
+        showPasswordButton.textContent = 'Show'
+    }
+    else {
+        showPasswordButton.textContent = 'Hide'
+    }
+})
 
 function toggleValidity(elementId, isValid) {
     const element = document.getElementById(elementId)
