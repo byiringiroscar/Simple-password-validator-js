@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Password validator</h3>
+    <form>
+        <div class="form-control">
+            <input type="password" placeholder="password" name="password" class="password-control">
+            <div class="rules">
+                <h4>Password must contain the following:</h4>
+                <ul>
+                    <li id="length">At least 8 characters</li>
+                    <li id="lowercase">At least one lowercase letter</li>
+                    <li id="uppercase">At least one uppercase letter</li>
+                    <li id="number">At least one number</li>
+                    <li id="special">At least one special character</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
